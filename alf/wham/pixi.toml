@@ -1,15 +1,15 @@
 [workspace]
 preview = ["pixi-build"]
-channels = ["conda-forge"]
+channels = ["conda-forge", "nvidia"]
 platforms = ["linux-64"]
 
 [dependencies]
-ALF = {path = "."}
+wham = {path = "."}
 
 [tasks]
 
 [package]
-name = "ALF"
+name = "wham"
 version = "0.1.0"
 
 [build-system]
@@ -22,6 +22,9 @@ channels = [
 
 [build-dependencies]
 cmake = ">=3.20, <3.27"      
+gxx_linux-64 = "11.2.*"
+cuda = "11.7.*"
 
 [host-dependencies]
-
+openmpi = "4.1.*"
+fftw = "3.3.*"
