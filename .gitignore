@@ -24,3 +24,7 @@ alf/wham/cmake_install.cmake
 alf/wham/libwham.so
 
 .vscode
+
+# pixi environments
+.pixi
+*.egg-info
