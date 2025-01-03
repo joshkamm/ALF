@@ -1,0 +1,18 @@
+schema_version: 1
+context: {}
+package:
+  name: wham
+  version: 0.1.0
+build:
+  number: 0
+requirements:
+  build:
+  - cmake >=3.20,<3.27
+  - gxx_linux-64 11.2.*
+  - cuda 11.7.*
+  - gxx_linux-64
+  host:
+  - openmpi 4.1.*
+  - fftw 3.3.*
+  - cmake
+  - ninja

@@ -25,6 +25,7 @@ alf/wham/libwham.so
 
 .vscode
 
-# pixi environments
+# pixi stuff
 .pixi
 *.egg-info
+build
